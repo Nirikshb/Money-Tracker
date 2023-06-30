@@ -37,9 +37,11 @@ const Login = () => {
 
   return (
     <div style={centeredStyle}>
+      
       <Card variant="elevated" size="lg" maxW="md" width="100%">
+      
         <CardHeader>
-          <Heading size="md">Login</Heading>
+          <Heading size="md">Money-Tracker Login</Heading>
         </CardHeader>
 
         <CardBody>
@@ -57,7 +59,7 @@ const Login = () => {
               Password
             </Text>
             <Input
-             type="password"
+              // type="password"
               value={password}
               name="password"
               onChange={handleChange}
