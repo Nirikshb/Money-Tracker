@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import {
   Card,
@@ -17,7 +17,8 @@ import { centeredStyle } from "../../App";
 
 const generatePassword = () => {
   const length = 10;
-  const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const charset =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   let password = "";
 
   for (let i = 0; i < length; i++) {
@@ -54,9 +55,17 @@ const Login = () => {
     });
   };
 
+  const handleSignup = () => {
+    navigate(PATHS.SIGNUP);
+  };
+
   return (
     <div style={centeredStyle}>
       <Card variant="elevated" size="lg" maxW="md" width="100%">
+       <CardHeader size='lg' color="gray.500">
+        Money Tracker App
+       </CardHeader>
+       
         <CardHeader>
           <Heading size="md">Login</Heading>
         </CardHeader>
@@ -99,9 +108,11 @@ const Login = () => {
           <Button mt={4} ml={40} colorScheme="twitter" onClick={handleLogin}>
             Log In
           </Button>
-          <Button mt={4} ml={40} colorScheme="twitter" onClick={handleLogin}>
-            Sign Up
-          </Button>
+          <Link to={PATHS.SIGNUP}>
+            <Button mt={4} ml={40} colorScheme="twitter" onClick={handleSignup}>
+              Sign Up
+            </Button>
+          </Link>
         </CardBody>
       </Card>
     </div>

@@ -30,10 +30,11 @@ const App = () => {
       <Route path="/" element={<PrivateRoutes />}>
         <Route path={PATHS.ADD_EXPENSE} element={<AddExpense />} />
         <Route path={PATHS.MANAGE_EXPENSE} element={<ManageExpense />} />
-      </Route>
+        </Route>
 
       <Route path="/" element={<RestrictedRoutes />}>
         <Route path={PATHS.LOGIN} element={<Login />} />
+        
       </Route>
     </Routes>
   );
