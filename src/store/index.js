@@ -40,5 +40,5 @@ export const INITIAL_STORE = [
     date: "2023-02-10",
   },
 ];
-
+//hardcoded values
 export const store = createStore(reducer, INITIAL_STORE, composeWithDevTools());
