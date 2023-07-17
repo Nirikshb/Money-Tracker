@@ -34,6 +34,7 @@ const App = () => {
 
       <Route path="/" element={<RestrictedRoutes />}>
         <Route path={PATHS.LOGIN} element={<Login />} />
+        
       </Route>
     </Routes>
   );
