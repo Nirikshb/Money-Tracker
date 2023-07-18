@@ -67,5 +67,5 @@ export const INITIAL_STORE = [
  
 
 ];
-//hardcoded values
+//hardcoded values 
 export const store = createStore(reducer, INITIAL_STORE, composeWithDevTools());
