@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { PATHS } from "./paths";
 import Login from "./components/Login/Login";
+
 import AddExpense from "./components/AddExpense/AddExpense";
 import ManageExpense from "./components/ManageExpense/ManageExpense";
 import PrivateRoutes from "./routes/PrivateRoutes";
